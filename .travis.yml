@@ -17,8 +17,8 @@ script:
   bucket_path: "docker-tackling"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id: $aws_ACCESS_KEY
   secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+    secure: "$aws_SECRET_KEY"
 
 
