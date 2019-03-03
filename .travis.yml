@@ -8,7 +8,7 @@ before_install:
 script:
  - docker run ankhomenko/docker-guide npm run test -- --coverage
 
- deploy:
+deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "docker-tackling"
