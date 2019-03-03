@@ -12,7 +12,7 @@ script:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "docker-tackling"
-  environment: "DockerTackling-env"
+  env: "DockerTackling-env"
   bucket_name: "elasticbeanstalk-eu-central-1-660271560963"
   bucket_path: "docker-tackling"
   on:
