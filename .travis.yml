@@ -7,3 +7,18 @@ before_install:
  
 script:
  - docker run ankhomenko/docker-guide npm run test -- --coverage
+
+ deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker-tackling"
+  environment: "DockerTackling-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-660271560963"
+  bucket_path: "docker-tackling"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
+
+
